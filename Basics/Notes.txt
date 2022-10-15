@@ -1,0 +1,2 @@
+Babel is a transpiler for ECMAScript15+ and allows use backward compatible features of Javascript.
+Backward compatible means using features of older version of javascript.
