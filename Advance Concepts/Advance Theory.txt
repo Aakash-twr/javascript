@@ -1,0 +1,40 @@
+// About Core Javascript
+
+->Babel is a transpiler for ECMAScript15+ and allows use backward compatible features of Javascript.
+->Backward compatible means using features of older version of javascript.
+->Javascript is case sensitive.
+-> Javascript is a synchronous and single threaded language.
+-> Single threaded - It can execute one line of code at a time.
+-> synchronous - one line of code is executed then other line turns come.
+-> When a Javascript code runs, a Global execution context is created.
+
+// Execution Context
+-> It has two phases - memory creation phase and code execution phase.
+-> Javascript skims through the whole program and allocate memory to all the variables and function and stores undefined to it.
+-> In case of functions, the whole function code is stored.
+-> In the code execution phase, code is executed line by line and when any function invoked, a new execution context is created.
+-> The whole functionality of newly created execution context is same as of Global execution context.
+-> In execution of the function, return keyword passes the control of function to the place where it was invoked.
+-> As soon as the function completes its execution, its execution context is deleted permanently.
+
+// Call Stack
+-> There is a stack which manages all the execution context which is known as call stack.
+-> When a Javascript code runs , a global execution context is created and put into the call stack.
+-> If any function invokes, its execution context is pushed into the call stack and as soon as it completes its execution it pops out from the stack.
+-> As the whole program completes execution the global execution context also moves out of call stack.
+
+
+
+
+
+
+
+-> var is global scoped ,so it value change reflects throughout the program.
+-> It can be re-declared.
+
+-> let is block scoped. Its value change can be reflected in the block only.
+-> It can be updated but not be re declared.
+
+-> const are constant variable whose cannot be changed throughout the program.
+-> const cannot be re-declared.
+-> const is also block scoped.
