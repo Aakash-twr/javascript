@@ -1,0 +1,11 @@
+// Along with the global execution context , a global object is also created.
+// It is known as window object.(In case of browsers)
+// It also creates a "this" keyword is created.
+// It points to the global object.
+// "this" keyword
+
+// Whenever any variable is created in the global space it get attached to the window object i,e "this"
+
+// Any code which is out of functions are in the global space.
+
+
