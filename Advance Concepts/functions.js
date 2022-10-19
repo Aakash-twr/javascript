@@ -19,3 +19,13 @@ function a(){
 
 // In case of re initialization ,
 // the value of x will change globally.
+
+// In case of arrow functions they behave differently . They behave as a variable if we want to access it.
+// 
+
+console.log(func)   // print undefined
+var func = ()=>{
+   console.log("arrow function");
+}
+console.log(func)   // prints the whole code.
+func();  // execute the code inside function.

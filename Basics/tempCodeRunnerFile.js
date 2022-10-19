@@ -1,3 +1,3 @@
-k=167
-// k+=15
-// console.log(k);
+console.log(Object.keys(marks));      
+// console.log(Object.keys(marks).length);  // This is how we can calculate the size of object.
+// console.log(Object.keys(marks)[1]);
