@@ -1,3 +1,3 @@
-console.log(Object.keys(marks));      
-// console.log(Object.keys(marks).length);  // This is how we can calculate the size of object.
-// console.log(Object.keys(marks)[1]);
+for(let i=0;i<b.length;i++){ // loop through the array
+//     console.log(b[i]);
+// }
