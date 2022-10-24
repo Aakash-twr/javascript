@@ -1,17 +1,17 @@
-// Window Object
+// let a = document.getElementById('head')
+// a.style.color='red';
 
-console.log(window) // Global object
-// window.alert("Man")
+// let b = document.title;
+// document.write(b);
 
-// document object used to manipulate elements of our page
+// let c = document.body.style
+// // c.background='yellow'
 
-document.body.style.background="gray"
+// let a = document.body.childNodes;
+// let d = Array.from(a);
+// console.log(d)
 
-let a = prompt("Enter your age");
-let age = Number.parseInt(a);
 
-if(age>18){
-    document.body.style.background='yellow'
-}else{
-    alert("You cannot drive");
-}
+// let c = document.body.hasChildNodes();
+// console.log(c)
+

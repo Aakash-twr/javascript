@@ -47,3 +47,5 @@ console.timeEnd("for");
 // a = Number.parseInt(a);
 // alert(typeof a);
 
+// Dom - Manipulation of HTML elements using Javascript
+
