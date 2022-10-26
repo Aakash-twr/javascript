@@ -15,3 +15,17 @@
 // let c = document.body.hasChildNodes();
 // console.log(c)
 
+
+// let b = document.body;
+// console.log(b.firstElementChild); // element navigation
+
+
+// console.log(b.nextElementSibling)
+
+// document.getElementById('first').innerText='Hello Good Morning';
+
+
+
+
+
+
