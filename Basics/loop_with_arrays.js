@@ -14,7 +14,7 @@ num.forEach((ele)=>{
 // console.log(num);
 
 
-// Array.from() - created a array from any iterables like strings
+// Array.from() - creates a array from any iterables like strings
 
 let obj = "nothing"
 
