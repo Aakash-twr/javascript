@@ -1,5 +1,6 @@
 // ** Hoisting means accessing variables and functions before initializing it. ** //
-
+// During Memory creation phase, Javascript engine moves the variable and function 
+//declaration on top of code.
 
 // getName();            // This will execute the function
 // console.log(x);       // this will print special keyword "undefined" 

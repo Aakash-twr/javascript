@@ -40,3 +40,22 @@ let f =99;
 console.log(e); // 100 
 // use of let is not reflected as it is block scoped (Same goes for const)
 console.log(f); // 99
+
+// Legal shadowing - 'var' can be shadowed using 'let'
+{
+    var a = 10;
+    {
+        let a = 100;
+        console.log(a)
+    }
+    console.log(a)
+}
+// Illegal shadowing - 'let' cannot be shadowed using 'var'
+{
+    let a =500;
+    {
+        var a =90;
+        console.log(a)
+    }
+    console.log(a)
+}
