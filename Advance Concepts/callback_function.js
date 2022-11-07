@@ -14,7 +14,7 @@ function x(y){
     console.log("Y");
 })
 
-// garbage collectors and removal of eventListeners
+
 
 
 

@@ -4,7 +4,7 @@ b(); // prints 100
 console.log(x); // prints 1
 
 function a(){
-      var x = 10;  // re declaration of x and it is block scoped
+      var x = 10;   // re declaration of x and it is block scoped
     console.log(x);
 }
  function b(){

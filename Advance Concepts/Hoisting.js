@@ -24,6 +24,6 @@ console.log(getAnother) // this will print undefined as the arrow functions act 
 // But function calling works the same.
 
 
-var getAnother = ()=>{   // this function stores its to the variable name "getAnother"
+var getAnother = ()=>{   // this function stores itself to the variable name "getAnother"
     console.log("i am arrow function");
 }
