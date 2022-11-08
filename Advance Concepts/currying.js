@@ -34,3 +34,38 @@ let doSum = function(x){
 
 const z = doSum(1);
 z(2);
+
+// Example
+
+// evaluate('sum')(2)(4)  - output -6
+
+function evaluate(operation){
+    return function(a){
+        return function(b){
+            if(operation=='sum') return a+b
+            else if(operation=='multiply') return a*b
+            else return "Invalid"
+        }
+    }
+}
+
+console.log(evaluate('sum')(2)(4));
+
+
+// Infinite Currying
+
+function infinite(a){
+    return function(b){
+        if(b) return infinite(a+b);
+        else return a;
+    }
+}
+
+console.log(infinite(2)(3)(4)(5)(9)());
+
+
+// Currying in DOM Manipulation
+
+// See in web folder
+
+

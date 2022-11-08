@@ -25,7 +25,23 @@
 // document.getElementById('first').innerText='Hello Good Morning';
 
 
+function updateText(id){
+    return function(content){
+        document.querySelector("#"+id).textContent=content;
+    }
+}
 
+const changeContent = updateText('heading');
 
+changeContent('My Boy Here is your Father')
 
+const obj = {
+    name:'Watson'
+}
+
+const strObj = JSON.stringify(obj);
+
+localStorage.setItem('Key',strObj)
+
+console.log(JSON.parse(strObj))
 

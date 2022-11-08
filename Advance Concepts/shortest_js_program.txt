@@ -1,6 +1,6 @@
 // Along with the global execution context , a global object is also created.
 // It is known as window object.(In case of browsers)
-// It also creates a "this" keyword is created.
+// It also creates a "this" keyword.
 // It points to the global object.
 // "this" keyword
 
