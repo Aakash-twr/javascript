@@ -9,6 +9,7 @@ function outer(){
     return {
         inner,
         innerNext
+        
     }
 }
 
