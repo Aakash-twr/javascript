@@ -3,6 +3,7 @@
 // It is used to share properties and methods across instances of the function.
 // Adding new properties to an function later , can be done by attaching properties that are being shared
 // among all the instances of that function.
+// It is a mechanism by which Javascript object inherit features from another.
 
 function Person(fName,lName){ // This is a constructor function
     this.fName=fName
@@ -46,3 +47,23 @@ function fun(){
 
 // All of the functions can access this myBind function
 fun.myBind()
+
+
+
+let user ={
+    getName:function(){
+        console.log(this.name);
+    }
+}
+
+let student={
+    name:'Anil'
+}
+
+let teacher={
+    name:'Farmer'
+}
+
+student.__proto__=user;  // This is how we inherit using proto.
+
+student.getName();
