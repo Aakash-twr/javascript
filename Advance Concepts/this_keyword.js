@@ -1,5 +1,6 @@
 // this keyword - It is used in a function , refers to the object to which it belongs to.
 // It nevers points to a function.
+// It points to the current object if it is inside it and points to the window object instead.
 
 const person ={
     name:'Captain',
@@ -23,3 +24,6 @@ sayMyName.call(person); // explicit Binding
 // Explicit Binding - We don't have any idea about the result.
 
 sayMyName(); // default binding
+
+
+
