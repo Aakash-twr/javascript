@@ -29,3 +29,32 @@ var func = ()=>{
 }
 console.log(func)   // prints the whole code.
 func();  // execute the code inside function.
+
+// Example -  Arrow VS Normal functions
+
+const obj = {
+   name:'Object',
+   normal: function (){
+      return this;
+   },
+   arrow: ()=>{
+      return this;
+   }
+}
+
+
+console.log(obj.arrow())  // points to the global object.
+console.log(obj.normal())  // points to the current object.
+
+
+
+// using "this" in both functions
+
+function example(){
+   return this;
+}
+
+const exampleTwo = ()=> {return this}
+
+console.log(example());   // points to the global object (Parent)
+console.log(exampleTwo());  // Could not 
