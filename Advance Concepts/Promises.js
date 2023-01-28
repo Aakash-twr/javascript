@@ -38,20 +38,20 @@
 
 const api = 'https://api.github/users/adarsh4567';
 
-const user = fetch(api);  // fetch is a web api provided by browser and it returns us a promise
+// const user = fetch(api);  // fetch is a web api provided by browser and it returns us a promise
 // As we discussed before the object will initially contains undefined until the promise is not
 // fulfilled.
 
-console.log(user);
+// console.log(user);
 // initially the user will store the promise object it looks like:
 //{ status:pending,result:undefined}
 // We can say that the promise is in pending state
 // Promise object can have three states : pending, fulfilled, rejected
 
 
-user.then(()=>{
-    console.log('Got the result');
-})
+// user.then(()=>{
+//     console.log('Got the result');
+// })
 
 // As soon as fetch() function get us the data, .then() method will automatically execute the call-back
 // function which is defined or passed into it.
@@ -63,12 +63,20 @@ user.then(()=>{
 
 // How Promises will resolve the call-back hell issue???
 
-user.then(()=>console.log('1 execution')).then(()=>console.log('2 execution')).then(()=>console.log('3 execution'))
+// user.then(()=>console.log('1 execution')).then(()=>console.log('2 execution')).then(()=>console.log('3 execution'))
 
 // this chaining of then function is called Promise chain and maintains the flow of program
 // and avoids the issue of call-back hell.
 
+// Syntax Implementation
 
-
+function asyncFunc(){
+    return new Promise((resolve,reject)=>{
+        // resolve('fulfilled')
+        reject('Not solved')
+    })
+}
+const a = asyncFunc();
+a.then((res)=> console.log(res)).catch((err)=> console.log(err))
 
 
