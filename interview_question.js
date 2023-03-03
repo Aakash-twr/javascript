@@ -101,6 +101,10 @@
 
 // console.log(sum);  105
 
+//23. let person = {name:'Jack'}
+// let member = [person]
+// person=null
+// console.log(member);  as it is
 
 
 
