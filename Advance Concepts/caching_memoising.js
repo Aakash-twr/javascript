@@ -30,3 +30,34 @@ const memoizeProduct = memoize(previous)
 
 console.log(memoizeProduct(100,200))
 console.log(memoizeProduct(100,200))
+
+
+// Another example
+
+
+
+function memoise(fn){
+    const cache = {};
+    return (...args)=>{
+       const argsToString = JSON.stringify(args);
+       if(argsToString in cache){
+        console.log('fetching from cache');
+        return cache[argsToString]
+       }else{
+        console.log('Computing the result');
+        const result = fn.apply(this,args);
+        cache[argsToString] = result;
+        return result
+       }
+    }
+}
+
+
+
+const addThreeNum = (a,b,c)=> a+b+c
+
+
+const add = memoise(addThreeNum)
+
+console.log(add(1,2,3));
+console.log(add(1,2,3));
